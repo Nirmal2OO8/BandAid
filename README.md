@@ -147,7 +147,6 @@ A full picture of your listening history:
 
 ![Settings](screenshots/settings2.png)
 
-![Settings Tabs](screenshots/setttingsTab.png)
 
 - **Theme** red or blue
 - **Font size** adjustable base size
@@ -162,6 +161,8 @@ A full picture of your listening history:
 ## Themes
 
 ![Blue Theme](screenshots/blueTheme.png)
+
+![Settings Tabs](screenshots/setttingsTab.png)
 
 Red (default) or blue. Switch in Settings.
 
