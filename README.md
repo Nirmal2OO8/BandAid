@@ -12,7 +12,7 @@ BandAid is a strictly local, decentralised musical databank. It pulls metadata f
 
 Grab the latest installer from the **[Releases](../../releases)** page.
 
-Double-click `BandAid Setup.exe` — it installs and opens automatically. Nothing else to install.
+Double-click `BandAid Setup.exe` it installs and opens automatically. Nothing else to install.
 
 > Windows will show a SmartScreen warning on first launch since the app isn't code-signed.
 > Click **More info → Run anyway**. This is standard for unsigned open-source apps.
@@ -48,7 +48,7 @@ The shuffle button picks a random unheard album when you can't decide what to pu
 
 ![Album Detail](screenshots/albumAbout.png)
 
-Click any album to open its full record — cover art, metadata, format, label, track count. From here you can:
+Click any album to open its full record cover art, metadata, format, label, track count. From here you can:
 
 - Set listen status: **Unheard / Heard / Skipped / Want List**
 - Rate it 1–5 stars
@@ -72,7 +72,7 @@ Three ways to build your library:
 
 ![Batch Import](screenshots/BatchImport.png)
 
-Paste a plain-text list and BandAid resolves everything against Discogs in the background. The queue shows live status per entry — pending, done, failed, rate limited. When Discogs rate limits kick in, a countdown shows exactly when it resumes.
+Paste a plain-text list and BandAid resolves everything against Discogs in the background. The queue shows live status per entry pending, done, failed, rate limited. When Discogs rate limits kick in, a countdown shows exactly when it resumes.
 
 Supported formats:
 
@@ -83,7 +83,7 @@ Title (Year)
 [x] Artist – Title (Year)    ← pre-mark as heard
 ```
 
-Genre headers work — any line without a dash gets treated as a category label:
+Genre headers work any line without a dash gets treated as a category label:
 
 ```
 Psychedelic Rock
@@ -103,7 +103,7 @@ Best: Music Is Math
 Notes: listen alone at night
 ```
 
-Drop a `.txt` file directly if you don't want to paste. RateYourMusic CSV exports are also supported — import the file and BandAid handles the column mapping automatically.
+Drop a `.txt` file directly if you don't want to paste. RateYourMusic CSV exports are also supported import the file and BandAid handles the column mapping automatically.
 
 The importer deduplicates against your existing library using exact matching and fuzzy Levenshtein distance, so near-identical entries don't sneak through twice.
 
@@ -133,7 +133,7 @@ A full picture of your listening history:
 - 52-week listening heatmap
 - Top artists by album count
 - Rating distribution
-- Genre breakdown — bar chart or donut chart
+- Genre breakdown bar chart or donut chart
 - Decade distribution
 - Format breakdown
 - Average rating per genre
@@ -149,13 +149,13 @@ A full picture of your listening history:
 
 ![Settings Tabs](screenshots/setttingsTab.png)
 
-- **Theme** — red or blue
-- **Font size** — adjustable base size
-- **Data directory** — choose exactly where BandAid stores your database. All data follows.
-- **Discogs token** — add or update your key
-- **Region blocking** — define country codes to automatically filter out releases from those regions during import
-- **Export** — full library as JSON or CSV; or a progress-only export (status, ratings, notes) that you can layer onto a fresh import later
-- **Auto-backup** — writes a dated JSON snapshot on every close, to a directory of your choice
+- **Theme** red or blue
+- **Font size** adjustable base size
+- **Data directory** choose exactly where BandAid stores your database. All data follows.
+- **Discogs token** add or update your key
+- **Region blocking** define country codes to automatically filter out releases from those regions during import
+- **Export** full library as JSON or CSV; or a progress-only export (status, ratings, notes) that you can layer onto a fresh import later
+- **Auto-backup** writes a dated JSON snapshot on every close, to a directory of your choice
 
 ---
 
@@ -181,7 +181,7 @@ Everything lives locally at:
 C:\Users\<you>\AppData\Roaming\BandAid\
 ```
 
-Or wherever you point it in Settings. The only time BandAid touches the internet is when you trigger an import — it calls `api.discogs.com` to fetch metadata. No analytics, no crash reporting, nothing running in the background.
+Or wherever you point it in Settings. The only time BandAid touches the internet is when you trigger an import it calls `api.discogs.com` to fetch metadata. No analytics, no crash reporting, nothing running in the background.
 
 ---
 
