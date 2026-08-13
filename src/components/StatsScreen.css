@@ -1,0 +1,77 @@
+.stats-screen { display: flex; flex-direction: column; gap: 32px; padding: 32px; overflow-x: hidden; }
+.stat-hero { display: flex; gap: 64px; font-size: 24px; border: 2px solid #ccc; padding: 24px; }
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.chart { border: 2px solid #ccc; padding: 16px; }
+.chart h3 { color: var(--accent); margin-bottom: 24px; }
+.bar-row { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.bar-lbl { width: 140px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 7px; }
+.bar-track { flex: 1; height: 16px; border: 2px solid #ccc; }
+.bar-fill { height: 100%; background: var(--accent); }
+.bar-val { width: 40px; text-align: right; font-size: 7px; }
+
+/* Heatmap */
+.heatmap-chart { grid-column: 1 / -1; }
+.heatmap-tooltip {
+  position: absolute;
+  background: var(--bg2);
+  border: 1px solid var(--cherry);
+  padding: 4px 8px;
+  font-size: 7px;
+  color: #fff;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 10;
+}
+.heatmap-legend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 7px;
+}
+.legend-cell {
+  width: 11px;
+  height: 11px;
+}
+
+/* Donut chart */
+.donut-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 7px;
+}
+.donut-legend-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.donut-swatch {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+}
+
+/* Chart toggle buttons */
+.chart-toggle-btn {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 6px;
+  padding: 4px 8px;
+  background: transparent;
+  border: 1px solid #333;
+  color: #888;
+  cursor: pointer;
+}
+.chart-toggle-btn.active {
+  border-color: var(--cherry);
+  color: var(--cherry);
+  background: rgba(204,0,34,0.1);
+}
+.chart-toggle-btn:hover {
+  border-color: var(--cherry);
+  color: var(--cherry);
+}
